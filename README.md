@@ -1,5 +1,7 @@
 # cloudLunar -- 一个基于数据而不是基于算法的农历 a lunar calendar based on data instead of caculate.
-一个农历微服务:
+
+##cloudLunar 简介:
+
 
 符合国标 gb33661 ;
 超长日历! 公元前3000-公元后3000年;
@@ -10,17 +12,26 @@ a lunar service on nodejs.
 Compliance gb33661，
 from b.c3000-a.d 3000 calendar,
 using vsop87d planet data.
+***
 
-<p>运行方法：</p>
-<p>npm install restify</p>
-<p>node ./src/api/lunarApi.js</p>
+##<p>运行方法：</p>
+
+``` bash
+npm install restify
+node ./src/api/lunarApi.js
+```
 
 访问：
-<p>http://127.0.0.1:8080/lunar/</p>
+<p>http://127.0.0.1:8080/lunar/2022-05-17</p>
+```
 
-<p>{"year":"2022","month":"4","date":17,"status":"200","msg":"ok","input":"2022-05-17","dx":"x","run":false,"cnyear":"二零二二","cnmonth":"四","cndate":"十七","gz":"壬寅","sx":"虎","cndx":"小","datecnstr":"二零二二(壬寅)虎年 四月(小) 十七","jq":"lx","jqdate":"2022-05-05","jqdays":13,"cnjq":"立夏","jqcnstr":"立夏 第13天","cnstr":"二零二二(壬寅)虎年 四月(小) 十七 立夏 第13天"}</p>
+{"year":"2022","month":"4","date":17,"status":"200","msg":"ok","input":"2022-05-17","dx":"x","run":false,"cnyear":"二零二二","cnmonth":"四","cndate":"十七","gz":"壬寅","sx":"虎","cndx":"小","datecnstr":"二零二二(壬寅)虎年 四月(小) 十七","jq":"lx","jqdate":"2022-05-05","jqdays":13,"cnjq":"立夏","jqcnstr":"立夏 第13天","cnstr":"二零二二(壬寅)虎年 四月(小) 十七 立夏 第13天"}
 
- 报文数据结构
+```
+***
+## 报文数据结构
+```
+
  * {
  * //---报文头部数据
  * "input":"2078-03-01",
@@ -49,5 +60,5 @@ using vsop87d planet data.
  * }
  * 
  */
-
+```
 
