@@ -13,11 +13,11 @@ using vsop87d planet data.
 
 <p>运行方法：</p>
 <p>npm install restify</p>
-node ./src/api/lunarApi.js
+<p>node ./src/api/lunarApi.js</p>
 
 访问：
-http://127.0.0.1:8080/lunar/
-{"year":"2022","month":"4","date":17,"status":"200","msg":"ok","input":"2022-05-17","dx":"x","run":false,"cnyear":"二零二二","cnmonth":"四","cndate":"十七","gz":"壬寅","sx":"虎","cndx":"小","datecnstr":"二零二二(壬寅)虎年 四月(小) 十七","jq":"lx","jqdate":"2022-05-05","jqdays":13,"cnjq":"立夏","jqcnstr":"立夏 第13天","cnstr":"二零二二(壬寅)虎年 四月(小) 十七 立夏 第13天"}
+<p>http://127.0.0.1:8080/lunar/</p>
+<p>{"year":"2022","month":"4","date":17,"status":"200","msg":"ok","input":"2022-05-17","dx":"x","run":false,"cnyear":"二零二二","cnmonth":"四","cndate":"十七","gz":"壬寅","sx":"虎","cndx":"小","datecnstr":"二零二二(壬寅)虎年 四月(小) 十七","jq":"lx","jqdate":"2022-05-05","jqdays":13,"cnjq":"立夏","jqcnstr":"立夏 第13天","cnstr":"二零二二(壬寅)虎年 四月(小) 十七 立夏 第13天"}</p>
 
 
  报文数据结构
