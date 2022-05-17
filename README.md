@@ -14,16 +14,20 @@ from b.c3000-a.d 3000 calendar,
 using vsop87d planet data.
 
 ##B.1运行方法1：
-作为service运行，将运行独立近程，可以通过httprest进行交互。
+作为service运行，将运行独立web进程，可以通过httprest进行交互。
+后继版本会做个docker出来。
 
-``` bash
+```
 npm install restify
 node ./src/api/lunarApi.js
+
 ```
 
 访问：
 <p>http://127.0.0.1:8080/lunar/2022-05-17</p>
+
 ```
+
 {"year":"2022","month":"4","date":17,"status":"200","msg":"ok","input":"2022-05-17","dx":"x","run":false,"cnyear":"二零二二","cnmonth":"四","cndate":"十七","gz":"壬寅","sx":"虎","cndx":"小","datecnstr":"二零二二(壬寅)虎年 四月(小) 十七","jq":"lx","jqdate":"2022-05-05","jqdays":13,"cnjq":"立夏","jqcnstr":"立夏 第13天","cnstr":"二零二二(壬寅)虎年 四月(小) 十七 立夏 第13天"}
 
 ```
