@@ -13,7 +13,7 @@ using vsop87d planet data.
 
 <p>运行方法：</p>
 <p>npm install restify</p>
-<p>node ./src/api/lunarApi.js</p>
+node ./src/api/lunarApi.js
 
 访问：
 http://127.0.0.1:8080/lunar/
