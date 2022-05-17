@@ -11,9 +11,9 @@ Compliance gb33661，
 from b.c3000-a.d 3000 clender,
 using vsop87d planet data.
 
-运行方法：
-npm install restify
-node ./src/api/lunarApi.js
+<p>运行方法：</p>
+<p>npm install restify</p>
+<p>node ./src/api/lunarApi.js</p>
 
 访问：
 http://127.0.0.1:8080/lunar/
