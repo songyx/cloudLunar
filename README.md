@@ -4,14 +4,22 @@
 
 
 符合国标 gb33661 ; 
+
 超长日历! 公元前3000-公元后3000年; 
+
 使用vsop87d行星算法数据来计算节气; 
+
 返回农历，干支，节气信息。 
 
+
 a lunar service on nodejs. 
+
 Compliance gb33661； 
+
 from b.c3000-a.d 3000 calendar； 
+
 using vsop87d planet data. 
+
 
 ## B.1运行方法1，作为service运行：
 将运行独立web进程，可以通过httprest进行交互。
