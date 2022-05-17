@@ -14,7 +14,7 @@ from b.c3000-a.d 3000 calendar,
 using vsop87d planet data.
 ***
 
-##<p>运行方法：</p>
+##运行方法：
 
 ``` bash
 npm install restify
