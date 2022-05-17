@@ -3,18 +3,18 @@
 ## A.cloudLunar 简介:
 
 
-符合国标 gb33661 ;
-超长日历! 公元前3000-公元后3000年;
-使用vsop87d行星算法数据来计算节气;
-返回农历，干支，节气信息。
+符合国标 gb33661 ; 
+超长日历! 公元前3000-公元后3000年; 
+使用vsop87d行星算法数据来计算节气; 
+返回农历，干支，节气信息。 
 
 a lunar service on nodejs. 
-Compliance gb33661，
-from b.c3000-a.d 3000 calendar,
-using vsop87d planet data.
+Compliance gb33661； 
+from b.c3000-a.d 3000 calendar； 
+using vsop87d planet data. 
 
-##B.1运行方法1：
-作为service运行，将运行独立web进程，可以通过httprest进行交互。
+## B.1运行方法1，作为service运行：
+将运行独立web进程，可以通过httprest进行交互。
 后继版本会做个docker出来。
 
 ```
@@ -32,8 +32,9 @@ node ./src/api/lunarApi.js
 
 ```
 
-## B.2运行方法2：
-直接调用注意，加载数据大约22万条，会消耗300~500ms时间。最好独立加载，而不是每次调用getLunar时加载，那样效率太低了。
+## B.2运行方法2，直接调用：
+注意，加载数据大约22万条，会消耗300~500ms时间。
+最好独立加载，而不是每次调用getLunar时加载，那样效率太低了。
 因为要加载从公元前3000年到公元后3000年的数据，才能保证正确的计算。
 
 ``` JavaScript
