@@ -1,0 +1,26 @@
+{
+  "type": "module",
+  "name": "cloudlunar",
+  "version": "1.0.0",
+  "description": "a lunar micro service",
+  "main": "./api/lunarApi.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/songyx/cloudLunar.git"
+  },
+  "keywords": [
+    "lunar"
+  ],
+  "author": "songyx",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/songyx/cloudLunar/issues"
+  },
+  "homepage": "https://github.com/songyx/cloudLunar#readme",
+  "dependencies": {
+    "restify": "^8.6.1"
+  }
+}
