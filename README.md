@@ -1,6 +1,6 @@
 # cloudLunar -- 一个基于数据而不是基于算法的农历 a lunar calendar based on data instead of caculate.
 
-##cloudLunar 简介:
+## A.cloudLunar 简介:
 
 
 符合国标 gb33661 ;
@@ -13,7 +13,8 @@ Compliance gb33661，
 from b.c3000-a.d 3000 calendar,
 using vsop87d planet data.
 
-##运行方法：
+##B.1运行方法1：
+作为service运行，将运行独立近程，可以通过httprest进行交互。
 
 ``` bash
 npm install restify
@@ -27,8 +28,22 @@ node ./src/api/lunarApi.js
 
 ```
 
+## B.2运行方法2：
+直接调用注意，加载数据大约22万条，会消耗300~500ms时间。最好独立加载，而不是每次调用getLunar时加载，那样效率太低了。
+因为要加载从公元前3000年到公元后3000年的数据，才能保证正确的计算。
 
-## 报文数据结构
+``` JavaScript
+import {loadData} from './src/service/dataloader.js'
+import {getLunar} from './src/service/lunarService.js'
+
+await loadData();
+
+console.log(getLunar('2022-05-12'));
+
+```
+
+
+## C返回报文数据结构
 ```
 
  * {
